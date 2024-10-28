@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTOP 2 - 37 - Yan Imanita Abdilah</title>
+    <style>
+        body {
+            background: url(gambar1.jpg) no-repeat fixed;
+            background-size: cover;
+        }
+        .form_tengah{
+            width: 80%;
+            border-left: 3px dashed white;
+            border-right: 3px dashed white;
+            border-radius: 30px;
+            box-shadow: 5px 5px grey;
+            padding: 20px 20px;
+            margin: 0px auto;
+            background-color: darkblue;
+            color: white;
+            opacity: 0.8;
+            font-weight: bolder;
+        }
+
+        h2{
+            border-bottom: 3px dashed white;
+            padding: 10px 10px;
+            width: 90%;
+            margin: auto auto;
+            text-align: center;
+        }
+        form{
+            margin: auto auto;
+            width: 90%;
+            margin-top: 20px;
+        }
+        input[type="text"], input[type="date"], input[type="number"], select, textarea{
+            width: 100%;
+            float: right;
+            color: black;
+        }
+        .m-30 {
+            margin-bottom:30px;
+        }
+        .m-15 {
+            margin-bottom:15px;
+        }
+        .button {
+            margin-top: 10px;
+            background: white;
+            color: blue;
+            width: 100px;
+            font-weight:bold;
+            padding: 5px 5px;
+        }
+
+        .m-45 {
+            margin-bottom: 45px;
+        }
+
+        input.jumlah-menu {
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+    <div class="form_tengah">
+        <h2>Formulir Nota Pembelian</h2>
+        <form action="">
+            <div class="m-30">Nama Pembeli <input type="text" name="nama" placeholder="ketikan nama kamu"></div>
+            <div class="m-45">Alamat Pembeli
+                <textarea name="alamat" placeholder="ketikan alamatmu"></textarea>
+            </div>
+            <div class="m-30">Kode Pos
+                <input type="text" list="kota_lahir" name="kota_lahir" 
+                placeholder="ketikan dan/atau pilih kode pos alamatmu">
+                <datalist id="kota_lahir">
+                    <option value="50227">50227</option>
+                    <option value="50228">50228</option>
+                    <option value="50229">50229</option>
+                </datalist></div>
+            <div class="m-30">Tanggal Beli
+                <input type="date" name="ttl">
+            </div>
+            <div class="m-15">Pembayaran 
+                <br/>
+                <input type="radio" name="gender" value="Lunas"> Lunas
+                <input type="radio" name="gender" value="Belum Lunas"> Belum Bayar
+                <input type="radio" name="gender" value="DP"> DP <input type="number" name="jumlah_dp" class="jumlah-menu" placeholder="ketikan angka uang DP">
+            </div>
+            <div class="m-30">
+                Jenis Pembayaran 
+                <select name="agama">
+                    <option>Pilih</option>
+                    <option value="Katholik">Tunai</option>
+                    <option value="Islam">Transfer</option>
+                </select>
+            </div>
+            Menu
+            <div class="m-15">
+                <input type="checkbox" class="menu" name="menu2"
+                value="Mie goreng"> Mie goreng
+                <input type="number" name="jumlah_menu2" class="jumlah-menu" placeholder="ketikan angka pesanan">
+            </div>
+            <div class="m-15">
+                <input type="checkbox" class="menu" name="menu1"
+                value="Nasi goreng"> Nasi goreng
+                <input type="number" name="jumlah_menu1" class="jumlah-menu" placeholder="ketikan angka pesanan">
+            </div>
+            <div class="m-15">
+                <input type="checkbox" class="menu" name="menu2"
+                value="Jeruk"> Jeruk
+                <input type="number" name="jumlah_menu2" class="jumlah-menu" placeholder="ketikan angka pesanan">
+            </div>
+            <div class="m-15">
+                <input type="checkbox" class="menu" name="menu2"
+                value="Teh"> Teh
+                <input type="number" name="jumlah_menu2" class="jumlah-menu" placeholder="ketikan angka pesanan">
+            </div>
+            <center>
+                <input type="reset" value="Clear" class="button"> <input type="submit" value="Send" class="button">
+            </center>
+            
+        </form>
+    </div>
+</body>
+</html>
